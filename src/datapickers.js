@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   textField: {
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(1),
-    width: 200
+    width: 240
   },
 }));
 
@@ -32,13 +32,13 @@ export default function DatePickers() {
       <TextField
         className={classes.textField}
         id="basic"
-        label="🔔 阿公店開店日選擇 🔔"
+        label="🔔阿公の拉麵店開幕日期選擇🍜"
         value={ROCdate}
       />
       <TextField
         className={classes.textField}
         id="date"
-        label="🍜 阿公開的是拉麵店啦 🍜"
+        label=" "
         type="date"
         onChange={event => { //拿值
             setROCdate(ROCDATE(event.target.value)) //會拿到date
